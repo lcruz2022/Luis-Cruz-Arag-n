@@ -1,0 +1,32 @@
+﻿@model  List<Luis_Cruz_Aragòn.Models.ClassCliente>
+@*
+    ViewData["Title"] = "Home Page";
+
+}*@
+
+<div>
+    <table class="table">
+   <thead class="thead-dark">
+        <tr>
+            <th>Nombre Cliente</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Edad</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+        foreach(var item in Model)
+        {
+        <tr>
+        <td>@item.Nombre</td>
+        <td>@item.Direccion</td>
+        <td>@item.Telefono</td>
+        <td>@item.Edad</td>
+
+        </tr>
+        }
+        }
+    </tbody>
+</table>
+</div>
