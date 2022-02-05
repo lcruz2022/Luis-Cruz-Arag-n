@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Luis_Cruz_Aragòn
+namespace Luis_Cruz_Aragon
 {
     public class Program
     {

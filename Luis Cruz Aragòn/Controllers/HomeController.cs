@@ -1,4 +1,5 @@
 ﻿using Luis_Cruz_Aragòn.Models;
+using Luis_Cruz_Aragon.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -7,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Luis_Cruz_Aragòn.Controllers
+namespace Luis_Cruz_Aragon.Controllers
 {
     public class HomeController : Controller
     {
@@ -77,5 +78,10 @@ namespace Luis_Cruz_Aragòn.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        public IActionResult Get()
+        {
+            return View("Privacy");
+        }
+
     }
 }
